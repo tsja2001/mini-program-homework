@@ -1,36 +1,113 @@
-.out{
-	box-sizing: border-box;
-	padding: 20rpx;
-}
-.title{
-	font-size: 30rpx;
-	padding-top: 40rpx;
-}
-/* pages/result/result.wxss */
-.question-content{
-	padding-top: 50rpx;
-}
-.question-item{
-	padding-top: 5rpx;
-}
-.changed{
-	font-weight: 800;
-}
-.actived{
-	font-weight: 800;
-	color: rgb(35, 154, 94);
+/* 深色主题全局样式 */
+body {
+  
 }
 
-.right{
-	color: rgb(35, 154, 94);
+/* 外部容器样式 */
+.out {
+	background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.error{
-	color: red;
+/* 内容区域样式 */
+.content {
+  display: flex;
+  flex-direction: column;
 }
 
-.line{
-	width: 100%;
-	display: flex;
-	flex-flow: row nowrap;
+/* 行样式 */
+.line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* 键样式 */
+.key {
+  margin-right: 10px;
+}
+
+/* 标题样式 */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* 问题内容区域样式 */
+.question-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 问题项内部样式 */
+.question-item-inner {
+  border: 1px solid #4a4a4a;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* 问题项内部激活状态样式 */
+.actived {
+  border-color: #4caf50;
+}
+
+/* 问题样式 */
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 改变样式 */
+.changed {
+  margin-bottom: 5px;
+}
+
+/* 正确错误样式 */
+.right {
+  color: #4caf50;
+}
+
+.error {
+  color: #f44336;
+}
+
+/* 答案区域样式 */
+.answer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 问题项样式 */
+.question-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 答案内容样式 */
+.answerContent {
+  margin-bottom: 5px;
+}
+
+/* 按钮区域 */
+button {
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* 按钮悬停效果 */
+button:hover {
+  background-color: #3f9a40;
 }
