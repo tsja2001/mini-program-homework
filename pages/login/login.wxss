@@ -1,0 +1,14 @@
+.content{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: column;
+}
+.main{
+  width: 70%;
+  display: flex;
+  flex-flow: row ;
+  justify-content: space-between;
+}

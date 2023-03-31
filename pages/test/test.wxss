@@ -1,0 +1,10 @@
+/* pages/test/test.wxss */
+.question-item-inner{
+	width: 100%;
+	padding: 10rpx 0;
+}
+
+.actived{
+	color: #158639;
+	font-weight: 800;
+}

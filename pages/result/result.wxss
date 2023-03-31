@@ -1,0 +1,36 @@
+.out{
+	box-sizing: border-box;
+	padding: 20rpx;
+}
+.title{
+	font-size: 30rpx;
+	padding-top: 40rpx;
+}
+/* pages/result/result.wxss */
+.question-content{
+	padding-top: 50rpx;
+}
+.question-item{
+	padding-top: 5rpx;
+}
+.changed{
+	font-weight: 800;
+}
+.actived{
+	font-weight: 800;
+	color: rgb(35, 154, 94);
+}
+
+.right{
+	color: rgb(35, 154, 94);
+}
+
+.error{
+	color: red;
+}
+
+.line{
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+}
