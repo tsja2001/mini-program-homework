@@ -40,8 +40,9 @@ Page({
 
   // 点击下一题的事件处理函数
   nextHandler(){
+    // 到最后一题
     if(this.data.currentIndex === this.data.questionList.length - 1){
-      wx.navigateTo({
+      wx.redirectTo({
         url: '/pages/result/result',
       });
 
