@@ -1,0 +1,27 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "%25E7%25AC%25AC%25E4%25BA%258C%25E6%25AC%25A1%2520%25E7%2594%25A8%25E6%2588%25B7%25E6%25B3%25A8%25E5%2586%258C%25E7%2595%258C%25E9%259D%25A2",
+  "setting": {
+    "compileHotReLoad": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "数据展示页面",
+          "pathName": "pages/show/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "表单数据修改",
+          "pathName": "pages/changeForm/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

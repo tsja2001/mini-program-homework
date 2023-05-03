@@ -1,0 +1,51 @@
+<!-- 注册页面 -->
+<view class="out">
+  <mp-form id="form" bindsuccess="successHandler" >
+    <mp-cells title="注册信息">
+      <mp-cell title="头像">
+        <mp-uploader delete="{{true}}" files="{{formData.imgUrl}}" title="{{null}}" bindselect="imgSelectHandler"
+          binddelete="imgDeleteHandler"></mp-uploader>
+      </mp-cell>
+      <mp-cell title="姓名">
+        <input type="text" placeholder="请输入姓名" value="{{formData.name}}" bindinput="formHandler" data-field="name"></input>
+      </mp-cell>
+      <mp-cell title="性别">
+        <radio-group bindchange="formHandler" data-field="sex">
+          <view style="margin-bottom: 10rpx;">
+            <radio value="0" checked="{{formData.sex === '0'}}">
+              男
+            </radio>
+          </view>
+          <view style="margin-bottom: 10rpx;">
+            <radio value="1" checked="{{formData.sex === '1'}}">
+              女
+            </radio>
+          </view>
+          <view>
+            <radio value="2" checked="{{formData.sex === '2'}}">
+              ...
+            </radio>
+          </view>
+        </radio-group>
+      </mp-cell>
+      <mp-cell title="手机号码">
+        <input type="number" value="{{formData.phonenum}}" placeholder="请输入手机号码" bindinput="formHandler" data-field="phonenum"></input>
+      </mp-cell>
+      <mp-cell title="入学年月日">
+        <picker mode="date" bindchange="formHandler" bindcancel="" data-field="date">
+          <view class="weui-input">{{formData.date}}</view>
+        </picker>
+      </mp-cell>
+      <mp-cell title="学校">
+        <input type="text" value="{{formData.school}}" placeholder="请输入学校" bindinput="formHandler" data-field="school"></input>
+      </mp-cell>
+      <mp-cell title="学院">
+        <input type="text" value="{{formData.xueyuan}}" placeholder="请输入学院" bindinput="formHandler" data-field="xueyuan"></input>
+      </mp-cell>
+      <mp-cell title="专业">
+        <input type="text" value="{{formData.zhuanye}}" placeholder="请输入专业" bindinput="formHandler" data-field="zhuanye"></input>
+      </mp-cell>
+    </mp-cells>
+  </mp-form>
+  <button style="margin-top: 20rpx;" class="button" type="primary" bindtap="submitForm">确定</button>
+</view>

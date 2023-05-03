@@ -1,0 +1,34 @@
+<!-- 数据展示页面 -->
+<view class="out">
+  <mp-form id="form" bindsuccess="successHandler">
+    <mp-cells title="点击每一项以编辑数据">
+      <mp-cell title="头像" link>
+        <image class="img" src="{{formData.imgUrl[0].url}}" mode="aspectFit" bindtap="changeHandle" data-field="imgUrl">
+        </image>
+      </mp-cell>
+      <mp-cell title="姓名" link bindtap="changeHandle" data-field="name">
+        {{formData.name}}
+      </mp-cell>
+      <mp-cell title="性别" link bindtap="changeHandle" data-field="sex">
+        <view wx:if="{{formData.sex === '0'}}" data-field="sex">男</view>
+        <view wx:if="{{formData.sex === '1'}}" data-field="sex">女</view>
+        <view wx:if="{{formData.sex === '2'}}" data-field="sex">...</view>
+      </mp-cell>
+      <mp-cell title="手机号码" link bindtap="changeHandle" data-field="phonenum">
+        {{formData.phonenum}}
+      </mp-cell>
+      <mp-cell title="入学年月日" link bindtap="changeHandle" data-field="date">
+        <view class="weui-input" data-field="date">{{formData.date}}</view>
+      </mp-cell>
+      <mp-cell title="学校" link bindtap="changeHandle" data-field="school">
+        {{formData.school}}
+      </mp-cell>
+      <mp-cell title="学院" link bindtap="changeHandle" data-field="xueyuan">
+        {{formData.xueyuan}}
+      </mp-cell>
+      <mp-cell title="专业" link bindtap="changeHandle" data-field="zhuanye">
+        {{formData.zhuanye}}
+      </mp-cell>
+    </mp-cells>
+  </mp-form>
+</view>
