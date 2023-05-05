@@ -1,0 +1,8 @@
+<!-- index.wxml -->
+<view>
+  <view>当前位置：{{latitude}}, {{longitude}}</view>
+  <view>目标位置：{{destination.latitude}}, {{destination.longitude}}, {{destination.name}}</view>
+  <view>距离：{{distance}}米</view>
+  <button bindtap="chooseLocation">选择目标位置</button>
+  <button bindtap="calculateDistance">测距</button>
+</view>
