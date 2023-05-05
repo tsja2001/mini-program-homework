@@ -1,8 +1,0 @@
-
-Page({
-  data: {
-    logs: []
-  },
-  onLoad() {
-  }
-})
